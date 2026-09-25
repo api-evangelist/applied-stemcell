@@ -1,23 +1,68 @@
 aid: applied-stemcell
+
 name: Applied StemCell
-description: 'Applied StemCell is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://appliedstemcell.com/wp-content/uploads/2025/03/ASClogo_sqStacked.jpg?wsr
+
+description: 'Applied StemCell provides genome engineering platforms and services, including the TARGATT™ large knock‑in technology, CRISPR/Cas9, Mad7 gene editing, and iPSC‑based drug discovery. The company offers kits, cell lines, and cGMP manufacturing to accelerate research and therapeutic development.'
+
 url: https://raw.githubusercontent.com/api-evangelist/applied-stemcell/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
-- Company
-apis: []
+- Biotechnology
+- Genome Engineering
+- CRISPR
+- iPSC
+- Cell Therapy
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/applied-stemcell-hosts.yml
+- type: Vendors
+  url: vendors/applied-stemcell-vendors.yml
+- type: PrivacyPolicy
+  url: https://appliedstemcell.com/privacy-policy/
+- type: Newsroom
+  url: https://appliedstemcell.com/news/
+- type: Login
+  url: https://appliedstemcell.com/login/
+- type: DomainSecurity
+  url: security/applied-stemcell-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/applied-stemcell_stock/
+  url: https://appliedstemcell.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
